@@ -74,10 +74,11 @@ const Login = ({ setUserState }) => {
           value={user.password}
         />
         <p className={basestyle.error}>{formErrors.password}</p>
+        <a href="https://q-buster.vercel.app/">
         <button className={basestyle.button_common} onClick={loginHandler}>
           Login
         </button>
-      </form>
+</a>
       <NavLink to="/signup">Not yet registered? Register Now</NavLink>
     </div>
   );
